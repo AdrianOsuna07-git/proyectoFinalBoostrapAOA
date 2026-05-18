@@ -1,0 +1,76 @@
+.colorBase{
+    background-color: rgb(248, 238, 222);
+}
+
+.tamanoLogo{
+    width: 50px;
+}
+
+.container{
+    margin-top: 20px;
+}
+
+h2{
+    margin-top: 10px;
+    font-size: 2em;
+    color: gray;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.decora-home{
+    font-family: 'Courier New';
+    font-weight: bold;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    text-align: center; 
+    min-height: 80vh;
+}
+
+body{
+    background-image: linear-gradient(to right,#f6ede5,#e9d5c5);
+}
+
+.botones{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.ocultar {
+    display: none;
+}
+
+.colorBoton{
+    background-color: burlywood;
+}
+
+.subraya {
+    position: relative;
+    text-decoration: none;
+    display: inline-block; 
+    padding-bottom: 5px; 
+}
+
+.subraya::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%; 
+    background-color: rgb(165, 113, 16);
+    transition: all 0.3s ease-in-out; 
+    transform: translateX(-50%); 
+}
+
+.subraya:hover::after {
+    width: 100%;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Asegura que el nav quede por encima de las cards y secciones */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Opcional: una pequeña sombra para dar profundidad */
+}
