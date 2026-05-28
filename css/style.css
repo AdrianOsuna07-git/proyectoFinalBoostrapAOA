@@ -37,6 +37,11 @@ body{
     margin-bottom: 15px;
 }
 
+.btn:hover{
+    background-color: navajowhite;
+
+}
+
 .ocultar {
     display: none;
 }

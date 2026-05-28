@@ -4,6 +4,7 @@ let linkClasico = document.getElementById('link-clasico');
 let linkFiccion = document.getElementById('link-ficcion');
 let linkTerror = document.getElementById('link-terror');
 let linkRomance = document.getElementById('link-romance');
+let linkLogo = document.getElementById('logoPrinci');
 
 //Creamos los elementos de cada sección
 let secClasica = document.getElementById('seccion-clasica');
@@ -18,6 +19,7 @@ linkClasico.addEventListener("click", filtrarClasico);
 linkFiccion.addEventListener("click", filtrarFiccion)
 linkTerror.addEventListener("click",filtraTerror);
 linkRomance.addEventListener("click",filtrarRomance)
+linkLogo.addEventListener("click",mostrarTodo);
 
 //Creamos las funciones
 function mostrarTodo() {
