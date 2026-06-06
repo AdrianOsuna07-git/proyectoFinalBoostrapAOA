@@ -32,6 +32,9 @@
                 <li class="nav-item subraya">
                     <a class="nav-link" href="#" id="link-romance">Romance</a>
                 </li>
+                <li class="nav-item subraya">
+                    <a class="nav-link" href="#" id="link-contacto">Contacto</a>
+                </li>
             </ul>
             </div>
         </div>
@@ -386,6 +389,33 @@
                 <button class="btn colorBoton" type="button">Mas Informacion...</button>
             </div>
     </section>
+    <section id="seccion-contacto" class="ocultar">
+        <h2>CONTACTANOS</h2>
+        <div class="container container-form">
+        <form class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre Y Apellido</label>
+                            <input type="text" class="form-control" id="nombre" name="Nombre" required>
+                            <div class="invalid-feedback">Campo obligatorio</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="apellido" class="form-label">Correo Electronico</label>
+                            <input type="gmail" class="form-control" id="apellido" name="Apellido" required>
+                            <div class="invalid-feedback">Campo obligatorio</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Descripcion" class="form-label">Motivo Del Contacto</label>
+                            <textarea class="form-control" id="Descripcion" rows="3" name="Descripcion" required></textarea>
+                            <div class="invalid-feedback">Campo obligatorio</div>
+                        </div>
+                        <div class="mb-3">
+                            <input class="btn colorBoton" type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>  
+        </div>
+    </section>
     <script src="js/script.js"></script>
+    <script src="js/validacion.js"></script>
 </body>
 </html>

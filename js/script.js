@@ -4,6 +4,7 @@ let linkClasico = document.getElementById('link-clasico');
 let linkFiccion = document.getElementById('link-ficcion');
 let linkTerror = document.getElementById('link-terror');
 let linkRomance = document.getElementById('link-romance');
+let linkContactgo =  document.getElementById('link-contacto')
 let linkLogo = document.getElementById('logoPrinci');
 
 //Creamos los elementos de cada sección
@@ -12,6 +13,7 @@ let secFiccion = document.getElementById('seccion-ficcion');
 let secHome = document.getElementById('seccion-home');
 let secTerror = document.getElementById('seccion-terror');
 let secRomance = document.getElementById('seccion-romance');
+let secContacto = document.getElementById('seccion-contacto')
 
 //Hacemos los event listener
 linkHome.addEventListener("click", mostrarTodo);
@@ -20,6 +22,7 @@ linkFiccion.addEventListener("click", filtrarFiccion)
 linkTerror.addEventListener("click",filtraTerror);
 linkRomance.addEventListener("click",filtrarRomance)
 linkLogo.addEventListener("click",mostrarTodo);
+linkContactgo.addEventListener("click",filtrarContacto);
 
 //Creamos las funciones
 function mostrarTodo() {
@@ -28,6 +31,7 @@ function mostrarTodo() {
     secFiccion.classList.add('ocultar');
     secTerror.classList.add('ocultar');
     secRomance.classList.add('ocultar')
+    secContacto.classList.add('ocultar')
 }
 
 function filtrarClasico() {
@@ -36,6 +40,7 @@ function filtrarClasico() {
     secHome.classList.add('ocultar');
     secTerror.classList.add('ocultar');
     secRomance.classList.add('ocultar')
+    secContacto.classList.add('ocultar')
 }
 
 function filtrarFiccion() {
@@ -44,6 +49,7 @@ function filtrarFiccion() {
     secHome.classList.add('ocultar');
     secTerror.classList.add('ocultar');
     secRomance.classList.add('ocultar')
+    secContacto.classList.add('ocultar')
 }
 
 function filtraTerror(){
@@ -52,10 +58,21 @@ function filtraTerror(){
     secClasica.classList.add('ocultar');
     secHome.classList.add('ocultar');
     secRomance.classList.add('ocultar')
+    secContacto.classList.add('ocultar')
 }
 
 function filtrarRomance(){
     secRomance.classList.remove('ocultar');
+    secClasica.classList.add('ocultar');
+    secFiccion.classList.add('ocultar');
+    secTerror.classList.add('ocultar');
+    secHome.classList.add('ocultar');
+    secContacto.classList.add('ocultar')
+}
+
+function filtrarContacto(){
+    secContacto.classList.remove('ocultar')
+    secRomance.classList.add('ocultar');
     secClasica.classList.add('ocultar');
     secFiccion.classList.add('ocultar');
     secTerror.classList.add('ocultar');
